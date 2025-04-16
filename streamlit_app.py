@@ -13,7 +13,7 @@ import pickle
 import gdown
 
 # Download the Random Forest model from Google Drive
-model_url = "https://drive.google.com/uc?id=1tCWekH26wW9cq_KtlKrI_CUsTGPl5Wso"
+model_url = "https://drive.google.com/uc?id=1AIHEGkrnY3mtmOjmMlXEZ4SAAxjaYig2"
 output_path = "rf_model.pkl"
 gdown.download(model_url, output_path, quiet=False)
 
