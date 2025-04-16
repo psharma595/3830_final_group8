@@ -25,7 +25,7 @@ with open("label_encoders.pkl", "rb") as f:
 # Load make-model pairs CSV
 make_model_df = pd.read_csv("make_model_pairs.csv")
 
-# Create tabs
+# Create tabs (only Introduction and Price Predictor)
 tab1, tab2 = st.tabs(["Introduction", "Price Predictor"])
 
 # --- Tab 1: Introduction ---
