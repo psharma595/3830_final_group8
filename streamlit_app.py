@@ -71,7 +71,7 @@ with tab3:
         filtered_models = label_encoders["model"].classes_
 
     model_name = st.selectbox("Model", sorted(filtered_models))
-    model_year = st.slider("Model Year", 2000, 2025, 2020)
+    model_year = st.slider("Model Year", 2014, 2024, 2017)
     mileage = st.number_input("Mileage (in KM)", value=50000)
     fuel_type = st.selectbox("Fuel Type", label_encoders["fuel_type_from_vin"].classes_)
     transmission = st.selectbox("Transmission", label_encoders["transmission_from_vin"].classes_)
