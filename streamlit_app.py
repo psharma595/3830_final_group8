@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """streamlit_app
 
-Modified to include two tabs: Introduction and Price Predictor.
+Includes only two tabs: Introduction and Price Predictor (Power BI tab removed).
 """
 
 import streamlit as st
@@ -25,11 +25,11 @@ with open("label_encoders.pkl", "rb") as f:
 # Load make-model pairs CSV
 make_model_df = pd.read_csv("make_model_pairs.csv")
 
-# Create tabs (only Introduction and Price Predictor)
-tab1, tab2 = st.tabs(["Introduction", "Price Predictor"])
+# Create tabs: only Introduction and Price Predictor
+intro_tab, predictor_tab = st.tabs(["Introduction", "Price Predictor"])
 
-# --- Tab 1: Introduction ---
-with tab1:
+# --- Introduction Tab ---
+with intro_tab:
     st.title("Vehicle Price Prediction Project")
 
     st.subheader("About the Project")
@@ -42,16 +42,14 @@ with tab1:
 
     st.subheader("How to Use This App")
     st.markdown("""
-    This interactive web application consists of the following sections:
+    This interactive web application consists of two main sections:
 
     - **Introduction:** Learn about the objective and functionality of the project.
     - **Price Predictor Tool:** Input vehicle details and receive an instant estimated price using machine learning.
-
-    Use the tabs above to explore each section of the tool.
     """)
 
-# --- Tab 2: Price Predictor ---
-with tab2:
+# --- Price Predictor Tab ---
+with predictor_tab:
     st.title("Vehicle Price Prediction App")
     st.markdown("Estimate a vehicle's price using our trained Random Forest regression model.")
 
