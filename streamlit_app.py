@@ -51,15 +51,9 @@ with tab1:
     Use the tabs above to explore each section of the tool.
     """)
 
-# --- Tab 2: Power BI ---
-with tab2:
-    st.title("Power BI Dashboard")
-    st.markdown("Explore vehicle data insights through our interactive Power BI dashboard.")
-    st.markdown("[Click here to open the Power BI Dashboard](https://your-powerbi-link.com)", unsafe_allow_html=True)
-    st.info("Make sure you’re logged in with an account that has access to the dashboard.")
 
-# --- Tab 3: Price Predictor ---
-with tab3:
+# --- Tab 2: Price Predictor ---
+with tab2:
     st.title("Vehicle Price Prediction App")
     st.markdown("Estimate a vehicle's price using our trained Random Forest regression model.")
 
